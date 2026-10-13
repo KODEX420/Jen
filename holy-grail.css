@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(128, 0, 128, 0.5), transparent 30%),
+        linear-gradient(135deg, #050014, #10002b, #000000);
+
+}
+
+.page {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header header"
+        "left main right"
+        "footer footer footer";
+
+    gap: 10px;
+}
+
+
+.header {
+    grid-area: header;
+
+    background: linear-gradient(to top, rgb(9, 11, 12), rgb(47, 53, 89));
+    color: rgb(225, 227, 244);
+
+    padding: 20px;
+    text-align: center;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+.left-sidebar {
+    grid-area: left;
+
+    background: linear-gradient(to right, blue, cyan);
+    color: white;
+
+    padding: 20px;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.main-content {
+    grid-area: main;
+
+    background: linear-gradient(to bottom, rgb(183, 168, 189), rgb(75, 31, 111));
+    color: white;
+
+    padding: 20px;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.right-sidebar {
+    grid-area: right;
+
+    background: linear-gradient(to right, #4b3b8c, #1a1035);
+    color: white;
+
+    padding: 20px;
+
+    border: 3px solid rgb(105, 97, 117);
+    border-radius: 10px;
+}
+
+.footer {
+    grid-area: footer;
+
+    background: linear-gradient(to right, rgb(197, 189, 218), #2f3559);
+    color: white;
+
+    padding: 20px;
+    text-align: center;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.page > a {
+    grid-column: 1 / -1;
+
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

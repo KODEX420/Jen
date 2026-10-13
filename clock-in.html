@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock In Terminal</title>
+    <link rel="stylesheet" href="css/clock-in.css">
+</head>
+<body>
+
+    <main class="terminal">
+        <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">Jen:~$</span>
+        </div>
+
+        <section class="terminal-screen">
+            <p class="line">$ clock-in --employee Jen</p>
+            <p class="line" id="status">[SYSTEM] Waiting for clock in...</p>
+
+            <div class="clock-box">
+                <span class="prompt">TIME &gt;</span>
+                <span id="timer">00:00:00</span>
+            </div>
+
+            <p class="line" id="session">SESSION &gt; Not started</p>
+
+            <button id="clockInButton">[ CLOCK IN ]</button>
+            <a class="back-link" href="index.html">[ RETURN TO HOME ]</a>
+
+            <div class="reflection">
+                <h2>Reflection</h2>
+                <p>
+                    I used JavaScript with AI assistance to create a simple clock-in interaction.
+                    I learned how the button starts and stops a timer and how JavaScript can update
+                    text on the page while the program is running. I still control the HTML and CSS
+                    so the interaction fits the style of my website.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI-assisted code: JavaScript controls the clock-in button and timer. -->
+    <script src="js/clock-in.js"></script>
+</body>
+</html>
